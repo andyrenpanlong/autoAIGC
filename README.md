@@ -2,6 +2,22 @@
 
 基于LTX Desktop开源项目的AI视频生成Web平台，支持短剧、广告、社交媒体内容的自动化生成。
 
+## 📦 GitHub仓库
+
+代码已提交到GitHub: [https://github.com/andyrenpanlong/autoAIGC](https://github.com/andyrenpanlong/autoAIGC)
+
+### 快速克隆
+```bash
+git clone https://github.com/andyrenpanlong/autoAIGC.git
+cd autoAIGC
+```
+
+### 项目状态
+- **当前版本**: v0.1.0 (Alpha)
+- **代码状态**: 基础架构完成，核心功能开发中
+- **最后提交**: 2024年5月5日
+- **详细状态**: 查看 [PROJECT_STATUS.md](PROJECT_STATUS.md)
+
 ## 🎯 项目目标
 
 构建一个完整的AI视频生成平台，解决当前市场痛点：
