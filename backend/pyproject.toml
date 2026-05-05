@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "ai-video-backend"
+version = "0.1.0"
+description = "AI Video Generation Platform Backend"
+authors = ["Your Name <email@example.com>"]
+readme = "README.md"
+packages = [{include = "backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+uvicorn = {extras = ["standard"], version = "^0.34.0"}
+sqlalchemy = "^2.0.35"
+alembic = "^1.14.0"
+psycopg2-binary = "^2.9.10"
+redis = "^5.2.0"
+celery = "^5.4.0"
+pydantic = "^2.9.0"
+pydantic-settings = "^2.6.0"
+python-jose = "^3.3.0"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.16"
+httpx = "^0.28.0"
+aiofiles = "^24.0.0"
+python-dotenv = "^1.0.1"
+loguru = "^0.7.2"
+openai = "^1.51.0"
+transformers = "^4.45.0"
+torch = "^2.5.0"
+diffusers = "^0.30.0"
+accelerate = "^0.33.0"
+pillow = "^11.0.0"
+numpy = "^1.26.0"
+pandas = "^2.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.0"
+pytest-asyncio = "^0.23.0"
+httpx = "^0.28.0"
+black = "^24.10.0"
+isort = "^5.13.2"
+mypy = "^1.11.0"
+ruff = "^0.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+]
+ignore = ["E501", "B008"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
